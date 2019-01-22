@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hyperbyte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="sideways.css" />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js"></script>
+</head>
+<body>
+    <div id="line"></div>
+    <div class="wrapper">
+    <div id="wrap">
+        <h1>Hyperbyte</h1>
+    </div>
+    <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad sed, necessitatibus ea similique omnis? Adipisci aut quidem deserunt qui. Dicta quisquam voluptate aliquam voluptatibus enim reiciendis quaerat rem rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic alias sequi totam provident dolor. Itaque eveniet illo officia modi, at impedit dolor placeat nostrum perspiciatis natus, rem ex fugiat minus molestias debitis quam ipsum tempora odit eos. Ad, natus! Laudantium sed velit dicta corporis sint placeat dolores repellat laboriosam fugiat. Commodi enim aliquid quibusdam!</p>
+    <a href="mailto:reillyhewitson@gmail.com" id="contact"><button>Contact us</button></a>
+    </div>
+    <script>
+        var t1 = anime.timeline({
+            easing: 'easeOutExpo',
+        })
+        
+        t1.add({
+            targets: '#line',
+            height: '100%',
+            duration: 400
+        })
+        .add({
+            targets: '#line',
+            width: '100%',
+            left: '0%',
+            duration: 400
+        })
+        .add({
+            targets: '#wrap',
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            offset: "-=200",
+            duration: 400,
+        })
+        .add({
+            targets: '#wrap',
+            top: '20%',
+            translateY: ['50%', '0%'],
+            duration: 400,
+            easing: "easeOutExpo"
+        })
+        .add({
+            targets: '#desc, #contact',
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            offset: "-=200",
+            duration: 400
+        })
+    </script>
+</body>
+</html>

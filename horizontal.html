@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hyperbyte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="horizontal.css" />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <span class="title">H</span>
+        <span class="title">y</span>
+        <span class="title">p</span>
+        <span class="title">e</span>
+        <span class="title">r</span>
+        <span class="title">b</span>
+        <span class="title">y</span>
+        <span class="title">t</span>
+        <span class="title">e</span>
+    </div>
+    <div id="line"></div>
+    <div id="contact">
+        <a href="mailto:reillyhewitson@gmail.com"><button>Contact us</button></a>
+    </div>
+    <script>
+        var t1 = anime.timeline({
+            easing: 'easeOutExpo',
+        })
+        
+        t1.add({
+            targets: '#line',
+            width: '100%',
+            duration: 400
+        })
+        .add({
+            targets: '#line',
+            width: '0%',
+            left: '100%',
+            duration: 400
+        })
+        .add({
+            targets: '.title',
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            offset: "-=200",
+            duration: 800,
+        })
+        .add({
+            targets: '#wrap',
+            translateY: -50,
+            duration: 400,
+            easing: "easeOutExpo"
+        })
+        .add({
+            targets: '#contact',
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            offset: "-=200"
+        })
+    </script>
+</body>
+</html>

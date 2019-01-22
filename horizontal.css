@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro:900');
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    background-color: rgb(27, 6, 6)
+}
+
+#wrap{
+    margin: auto;
+}
+
+span{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50pt;
+    font-weight: 900;
+    color: white;
+}
+
+#line{
+    background-color: white;
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 0px;
+}
+
+#contact{
+    position: absolute;
+    top: 50%;
+    left: Calc(50% - 50px);
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    height: 50px;
+    background: none;
+    color: white;
+    border-style: solid;
+    border-radius: 2px;
+    width: 100px
+
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
