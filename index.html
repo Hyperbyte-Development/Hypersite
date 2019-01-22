@@ -28,14 +28,16 @@
             <a onclick="openWindow()" class="button"><button>Info</button></a>
         </div>
     <script>
-        var t1 = anime.timeline({
+        window.onload = function(){
+            var t1 = anime.timeline({
             easing: 'easeOutExpo',
         })
         
         t1.add({
             targets: '#line',
             width: '100%',
-            duration: 400
+            duration: 400,
+            offset: '+=300'
         })
         .add({
             targets: '#line',
@@ -62,6 +64,8 @@
             easing: "easeOutExpo",
             offset: "-=200"
         });
+        }
+        
 
         async function openWindow(){
             var t2 = anime.timeline({
