@@ -54,7 +54,7 @@
         })
         .add({
             targets: '#wrap',
-            translateY: -50,
+            translateY: -75,
             duration: 400,
             easing: "easeOutExpo"
         })
